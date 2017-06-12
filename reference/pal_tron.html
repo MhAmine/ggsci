@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Articles • ggsci</title>
+<title>Tron Legacy Color Palettes — pal_tron • ggsci</title>
 
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script>
@@ -36,7 +36,7 @@
   </head>
 
   <body>
-    <div class="container template-vignette-index">
+    <div class="container template-reference-topic">
       <header>
       <div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -76,20 +76,52 @@
       
       </header>
 
-      <div class="page-header">
-  <h1>Articles <small>version&nbsp;2.7</small></h1>
-</div>
-
-<div class="row">
-  <div class="col-md-9">
-    <div class="section ">
-      <h3>All vignettes</h3>
-      <p class="section-desc"></p>
-
-      <ul>
-        <li><a href="ggsci.html">Scientific Journal and Sci-Fi Themed Color Palettes for ggplot2</a></li>
-      </ul>
+      <div class="row">
+  <div class="col-md-9 contents">
+    <div class="page-header">
+    <h1>Tron Legacy Color Palettes</h1>
     </div>
+
+    
+    <p>Color palettes inspired by the colors used in <em>Tron Legacy</em>.</p>
+    
+
+    <pre class="usage"><span class='fu'>pal_tron</span>(<span class='kw'>palette</span> <span class='kw'>=</span> <span class='fu'>c</span>(<span class='st'>"legacy"</span>), <span class='kw'>alpha</span> <span class='kw'>=</span> <span class='fl'>1</span>)</pre>
+    
+    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a> Arguments</h2>
+    <table class="ref-arguments">
+    <colgroup><col class="name" /><col class="desc" /></colgroup>
+    <tr>
+      <th>palette</th>
+      <td><p>Palette type.
+Currently there is one available option: <code>"legacy"</code>
+(7-color palette).</p></td>
+    </tr>
+    <tr>
+      <th>alpha</th>
+      <td><p>Transparency level, a real number in (0, 1].
+See <code>alpha</code> in <code><a href='http://www.rdocumentation.org/packages/grDevices/topics/rgb'>rgb</a></code> for details.</p></td>
+    </tr>
+    </table>
+    
+
+    <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
+    <pre class="examples"><div class='input'><span class='fu'>library</span>(<span class='st'>"scales"</span>)
+<span class='fu'>show_col</span>(<span class='fu'>pal_tron</span>(<span class='st'>"legacy"</span>)(<span class='fl'>7</span>))</div><img src='pal_tron-2.png' alt='' width='540' height='400' /><div class='input'><span class='fu'>show_col</span>(<span class='fu'>pal_tron</span>(<span class='st'>"legacy"</span>, <span class='kw'>alpha</span> <span class='kw'>=</span> <span class='fl'>0.6</span>)(<span class='fl'>7</span>))</div><img src='pal_tron-4.png' alt='' width='540' height='400' /></pre>
+  </div>
+  <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
+    <h2>Contents</h2>
+    <ul class="nav nav-pills nav-stacked">
+      <li><a href="#arguments">Arguments</a></li>
+            
+      <li><a href="#examples">Examples</a></li>
+    </ul>
+
+    <h2>Author</h2>
+    
+Nan Xiao &lt;<a href='mailto:me@nanx.me'>me@nanx.me</a>&gt; |
+&lt;<a href = 'https://nanx.me'>https://nanx.me</a>&gt;
+
   </div>
 </div>
 
