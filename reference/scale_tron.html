@@ -18,6 +18,8 @@
 <!-- Font Awesome icons -->
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
 
+<!-- clipboard.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js" integrity="sha384-cV+rhyOuRHc9Ub/91rihWcGmMmCXDeksTtCihMupQHSsi8GIIRDG0ThDc3HGQFJ3" crossorigin="anonymous"></script>
 
 <!-- pkgdown -->
 <link href="../pkgdown.css" rel="stylesheet">
@@ -25,6 +27,10 @@
 <script src="../pkgdown.js"></script>
   
   
+<meta property="og:title" content="Tron Legacy Color Scales — scale_color_tron" />
+
+<meta property="og:description" content="See pal_tron for details." />
+<meta name="twitter:card" content="summary" />
 <!-- mathjax -->
 <script src='https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
 
@@ -143,13 +149,13 @@ See <code>alpha</code> in <code><a href='http://www.rdocumentation.org/packages/
   <span class='fu'><a href='http://www.rdocumentation.org/packages/ggplot2/topics/ggtheme'>theme_dark</a></span>() + <span class='fu'><a href='http://www.rdocumentation.org/packages/ggplot2/topics/theme'>theme</a></span>(
     <span class='kw'>panel.background</span> <span class='kw'>=</span> <span class='fu'><a href='http://www.rdocumentation.org/packages/ggplot2/topics/element'>element_rect</a></span>(<span class='kw'>fill</span> <span class='kw'>=</span> <span class='st'>"#2D2D2D"</span>),
     <span class='kw'>legend.key</span> <span class='kw'>=</span> <span class='fu'><a href='http://www.rdocumentation.org/packages/ggplot2/topics/element'>element_rect</a></span>(<span class='kw'>fill</span> <span class='kw'>=</span> <span class='st'>"#2D2D2D"</span>)) +
-  <span class='fu'>scale_color_tron</span>()</div><div class='img'><img src='scale_tron-5.png' alt='' width='700' height='432.632880098887' /></div><div class='input'>
+  <span class='fu'>scale_color_tron</span>()</div><div class='img'><img src='scale_tron-1.png' alt='' width='700' height='432.632880098887' /></div><div class='input'>
 <span class='fu'><a href='http://www.rdocumentation.org/packages/ggplot2/topics/ggplot'>ggplot</a></span>(<span class='fu'>subset</span>(<span class='no'>diamonds</span>, <span class='no'>carat</span> <span class='kw'>&gt;</span> <span class='fl'>2.2</span> <span class='kw'>&amp;</span> <span class='no'>depth</span> <span class='kw'>&gt;</span> <span class='fl'>55</span> <span class='kw'>&amp;</span> <span class='no'>depth</span> <span class='kw'>&lt;</span> <span class='fl'>70</span>),
        <span class='fu'><a href='http://www.rdocumentation.org/packages/ggplot2/topics/aes'>aes</a></span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='no'>depth</span>, <span class='kw'>fill</span> <span class='kw'>=</span> <span class='no'>cut</span>)) +
   <span class='fu'><a href='http://www.rdocumentation.org/packages/ggplot2/topics/geom_histogram'>geom_histogram</a></span>(<span class='kw'>colour</span> <span class='kw'>=</span> <span class='st'>"black"</span>, <span class='kw'>binwidth</span> <span class='kw'>=</span> <span class='fl'>1</span>, <span class='kw'>position</span> <span class='kw'>=</span> <span class='st'>"dodge"</span>) +
   <span class='fu'><a href='http://www.rdocumentation.org/packages/ggplot2/topics/ggtheme'>theme_dark</a></span>() + <span class='fu'><a href='http://www.rdocumentation.org/packages/ggplot2/topics/theme'>theme</a></span>(
     <span class='kw'>panel.background</span> <span class='kw'>=</span> <span class='fu'><a href='http://www.rdocumentation.org/packages/ggplot2/topics/element'>element_rect</a></span>(<span class='kw'>fill</span> <span class='kw'>=</span> <span class='st'>"#2D2D2D"</span>)) +
-  <span class='fu'>scale_fill_tron</span>()</div><div class='img'><img src='scale_tron-6.png' alt='' width='700' height='432.632880098887' /></div></pre>
+  <span class='fu'>scale_fill_tron</span>()</div><div class='img'><img src='scale_tron-2.png' alt='' width='700' height='432.632880098887' /></div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
@@ -173,7 +179,7 @@ Nan Xiao &lt;<a href='mailto:me@nanx.me'>me@nanx.me</a>&gt; |
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="http://hadley.github.io/pkgdown/">pkgdown</a>.</p>
+  <p>Site built with <a href="http://pkgdown.r-lib.org/">pkgdown</a>.</p>
 </div>
 
       </footer>
